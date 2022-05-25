@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coghlan</title>
+        <!-- Hoja de estilo personalizada -->
+        <link rel="stylesheet" href="./css/estilos.css">
+        <!-- Iconito de solapa de página -->
+        <link rel="icon" href="./img/coghlan.ico" type="image/x-icon">
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/9519ab4c98.js" crossorigin="anonymous"></script>
+        <!-- Animación -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Fonts de Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+        <!-- Código Javascript con el comando defer para "retardar" la ejecución del mismo -->
+        <script src="./js/fecha.js"></script>
+        <script defer src="./js/script.js"></script>
+    </head>
+<body>
+
+<!-- ------------------------------------------------------------------- -->
+<!-- -------------------------   HEADER   ------------------------------ -->
+    <header id="idHeader" class="header" ></header>
+
+<!-- ------------------------------------------------------------------- -->
+<!-- ------------------------   FORMULARIO  ---------------------------- -->   
+    <div class="formcontainer">
+        <div class="formulario animate__animated animate__flipInY">
+            <form action="https://formspree.io/f/xwkywwrl" method="POST">
+        
+                <input type="text" class="campos" required maxlength="20" name="txt_Apellido" id="txt_Apellido" placeholder="Ingrese su apellido">
+                <input type="text" class="campos" required maxlength="20" name="txt_Nombre" id="txt_Nombre" placeholder="Ingrese su nombre">
+                <input type="text" class="campos" required maxlength="20" name="txt_Pais" id="txt_Pais" placeholder="Ingrese su pais">
+                <input type="email" class="campos" required name="correo"placeholder="Ingrese su e-mail"> <br>
+                <label for="chk_Interesado" id="importante">Estoy interesadx en recibir información adicional</label>
+                <input name="chk_Interesado" type="checkbox" value="1" class="chk_box"><br>
+                <label id="comentarios">Ingrese sus comentarios: 
+                    <textarea name="mensaje" cols="45" rows="10" charswidth="140" id="caja-mensaje" placeholder=""></textarea>
+                    <!-- Profe.... anticípeme si estoy aprobado please!... :) -->
+                </label>
+                <button class ="pulsador" type="submit">Enviar</button>
+                <button class ="pulsador" type="reset">Borrar</button>
+            </form>
+        </div>
+    </div>
+
+<!-- ------------------------------------------------------------------- -->
+<!-- -------------------------   FOOTER   ------------------------------ -->
+    <footer class="piedepagina">
+        <div id="footerId"></div>
+        <div class="derechosreservados">
+            Derechos reservados 
+            <script>
+                document.write(mesok[mm.getMonth()]);
+            </script>
+            &copy
+            <script>
+                document.write(mm.getFullYear());
+            </script>
+        </div>
+    </footer>
+
+</body>
+</html>
